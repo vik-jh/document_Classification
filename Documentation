@@ -1,0 +1,11 @@
+To build an application using LangChain and Streamlit for insurance document classification and extraction, we will need a combination of: Document Classification & Information Extraction
+Document Classification to identify the type of insurance document.
+Information Extraction from the document based on its type(Car Insurance, Health Insurance, Home Insurance)
+Firstly, we need to upload the document using Stramlit's file_uploader to allow users to upload insurance documents
+Secondly, we use LangChain to classify the document type (e.g., Car insurance, Health Insurance) 
+Then, depending on the document type,  we need to extract the relevant information such as insurer name, address, premium etc. 
+Finally, the extracted information needs to be displayed. 
+We have the function used in this application. Here is the brief explanation:
+classify_document: This function uses LangChain to classify the document based on text input
+extract_information: This function uses regular expression(re) to extract fields like insurer name, address, car, premium, etc. depending on the document type
+Streamlit UI: The file_uploader allows users to upload their documents. The document type is then displayed, and the extracted information is shown in a formatted JSON block.
